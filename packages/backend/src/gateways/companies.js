@@ -8,9 +8,9 @@ const createCompany = () => {
 
   return {
     name: faker.company.companyName(),
-    logo: "https://picsum.photos/300",
+    logo: `https://picsum.photos/id/${faker.datatype.number(999)}/300`,
     city: faker.address.city(),
-    specialities: Array(faker.random.number(5) + 3)
+    specialities: Array(faker.datatype.number(5) + 3)
       .fill(null)
       .map(() => faker.commerce.productMaterial())
       .filter(onlyUnique),
