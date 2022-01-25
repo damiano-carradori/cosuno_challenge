@@ -1,0 +1,17 @@
+{
+  "name": "cosuno_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Damiano Carradori <damiano.carradori@gmail.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "lerna create",
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run start"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "lerna": "^4.0.0"
+  }
+}
