@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "Damiano Carradori <damiano.carradori@gmail.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\"",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.2",
+    "faker": "^5.5.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
