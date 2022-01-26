@@ -47,7 +47,7 @@ const Select = ({ selected, options, placeholder, setSelected }) => {
         <div
           className="origin-top absolute left-0 mt-2 w-full rounded-md shadow-lg bg-white  text-base"
           role="menu"
-          tabindex="-1"
+          tabIndex="-1"
         >
           <div className="py-1 overflow-auto max-h-60" role="none">
             {options.map((option) => (
@@ -102,6 +102,7 @@ const Filters = ({ selects, appliedFilters, onFilter }) => {
 
           return (
             <Select
+              key={select.name}
               selected={selected}
               options={select.options}
               placeholder={select.placeholder}
