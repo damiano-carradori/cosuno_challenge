@@ -5,11 +5,11 @@ const Select = ({ selected, options, placeholder, setSelected }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div class="relative inline-block text-left w-72">
+    <div className="relative inline-block text-left w-72">
       <div>
         <button
           type="button"
-          class="inline-flex justify-between w-full rounded-md text-base shadow-sm px-6 py-4 bg-white font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500 items-center"
+          className="inline-flex justify-between w-full rounded-md text-base shadow-sm px-6 py-4 bg-white font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500 items-center"
           onClick={() => setIsOpen((open) => !open)}
         >
           <span className="text-ellipsis overflow-hidden whitespace-nowrap">
@@ -45,11 +45,11 @@ const Select = ({ selected, options, placeholder, setSelected }) => {
         enterTo="opacity-100"
       >
         <div
-          class="origin-top absolute left-0 mt-2 w-full rounded-md shadow-lg bg-white  text-base"
+          className="origin-top absolute left-0 mt-2 w-full rounded-md shadow-lg bg-white  text-base"
           role="menu"
           tabindex="-1"
         >
-          <div class="py-1 overflow-auto max-h-60" role="none">
+          <div className="py-1 overflow-auto max-h-60" role="none">
             {options.map((option) => (
               <div
                 key={option}
