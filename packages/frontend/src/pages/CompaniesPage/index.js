@@ -31,9 +31,10 @@ const CompaniesPage = () => {
                   );
                 }
 
-                return company[filterName].includes(filterValue);
+                const regex = new RegExp(filterValue, "i");
+                return regex.test(company[filterName]);
               })
-              .some(Boolean);
+              .every(Boolean);
           })
         : companies,
     [appliedFilters, companies]
